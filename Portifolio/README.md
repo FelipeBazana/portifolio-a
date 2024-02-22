@@ -1,8 +1,9 @@
 # portifolio-a
 
 ## Tarefas
-- [] Header
-- [] Apresentacao
-- [] Projetos
-- [] Conhecimentos
-- [] Orcamento
+- [ ] Header
+     - [x] HTML
+- [ ] Apresentacao
+- [ ] Projetos
+- [ ] Conhecimentos
+- [ ] Orcamento
