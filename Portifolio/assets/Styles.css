@@ -1,5 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Paprika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;500;600;700;800&display=swap');
 
+/*
+.namdhinggo-regular {
+    font-family: "Namdhinggo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .namdhinggo-medium {
+    font-family: "Namdhinggo", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .namdhinggo-semibold {
+    font-family: "Namdhinggo", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .namdhinggo-bold {
+    font-family: "Namdhinggo", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .namdhinggo-extrabold {
+    font-family: "Namdhinggo", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  */
 
 
 header::before{
@@ -11,21 +42,46 @@ header::before{
     display: block;
     position: absolute;
     z-index: -10;
-};
+}
 
 
 h1{
-    font-family: "Paprika", sans-serif;
+    font-family: "Namdhinggo", serif;
     
-    color: red;
-    
-    font-size: 100px;
+    color: rgb(165, 145, 245);
+
+    font-weight: 500;
+
+    font-style: normal;
+
+    font-size: 200px;
+
 }
 
-h2{
-    font-family: "Bebas Neue", sans-serif;
+
+p{
+    font-family: "Namdhinggo", serif;
     
-    color: rgb(255, 0, 170);
-    
-    font-size: 300px;
+    color: rgb(145, 177, 245);
+
+    font-weight: 500;
+
+    font-style: normal;
+
+    font-size: 100px;
+
 }
+
+ul{
+    font-family: "Namdhinggo", serif;
+    
+    color: rgb(125, 145, 245);
+
+    font-weight: 500;
+
+    font-style: normal;
+
+    font-size: 100px;
+
+}
+
