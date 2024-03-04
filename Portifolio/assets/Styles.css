@@ -1,35 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*
-.namdhinggo-regular {
-    font-family: "Namdhinggo", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .namdhinggo-medium {
-    font-family: "Namdhinggo", serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .namdhinggo-semibold {
-    font-family: "Namdhinggo", serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .namdhinggo-bold {
-    font-family: "Namdhinggo", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .namdhinggo-extrabold {
-    font-family: "Namdhinggo", serif;
-    font-weight: 800;
-    font-style: normal;
-  }
+.exo-<uniquifier> {
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
   */
 
 
@@ -46,7 +23,7 @@ header::before{
 
 
 h1{
-    font-family: "Namdhinggo", serif;
+    font-family: "Exo", sans-serif;
     
     color: rgb(165, 145, 245);
 
@@ -60,7 +37,7 @@ h1{
 
 
 p{
-    font-family: "Namdhinggo", serif;
+    font-family: "Exo", sans-serif;
     
     color: rgb(145, 177, 245);
 
@@ -73,7 +50,7 @@ p{
 }
 
 ul{
-    font-family: "Namdhinggo", serif;
+    font-family: "Exo", sans-serif;
     
     color: rgb(125, 145, 245);
 
