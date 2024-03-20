@@ -14,21 +14,22 @@
 }
   */
 
+
 header{
   height: 100vh;
   border-radius: 50%;
 }
 
 header::before{
-    content: '';
-    background-image: url(../assets/images/Home.png);
-    background-color: black;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    display: block;
-    position: absolute;
-    z-index: -10;
+  content: '';
+  background-image: url(../assets/images/Home.png);
+  background-color: black;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  position: fixed;
+  z-index: -10;
 }
 
 
@@ -40,33 +41,84 @@ header::before{
 
 #Lore::before{
   content: '';
-  background-color: black;
-  background-size: cover;
-  height: 100vh;
+  height: 110vh;
   width: 100vw;
-  display: block;
-  position: absolute;
+  position: fixed;
   z-index: -10;
 }
 
-#Images-Inaros{
+#Images-Frames ul{
   height: 100vh;
   border-radius: 50%;
   display: flex;
-  justify-content: space-between;
+  
 }
 
-#Images-Inaros::before{
+#Images-Frames::before{
   content: '';
+  height: 110vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -10;
+}
+
+#Mods-Endo{
+  height: 100vh;
+  width: 100vw;
+  border-radius: 50%;
+  max-width: 5000px;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+
+#Mods-Endo::before{
+  background-image: url(../assets/images/Back-Mods.png);
   background-color: black;
   background-size: cover;
-  height: 115vh;
+  content: '';
+  height: 110vh;
   width: 100vw;
-  display: block;
   position: absolute;
   z-index: -10;
 }
 
+.card{
+  position: relative;
+  padding: 20px;
+  max-width: 300px;
+  max-height: 2000px;
+}
+
+.image-wrapper{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-wrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-text{
+  position: absolute;
+  top: 5%;
+  opacity: 0;
+}
+
+.card:hover .card-text{ 
+  opacity: 1;
+}
+
+.card:hover .image-wrapper{ 
+  filter: brightness(30%);
+}
 
 h3{
   margin: 0px;
@@ -104,4 +156,15 @@ ul{
 
   font-size: 20px;
 
+}
+
+label{
+  margin: 15px;
+  font-family: "Exo", sans-serif;
+  
+  color: #7d91f5;
+
+  font-style: normal;
+
+  font-size: 20px;
 }
