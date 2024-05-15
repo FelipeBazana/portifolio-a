@@ -1,7 +1,13 @@
 
+
+
+import "nes.css/css/nes.min.css";
+
+
 document.querySelector('#raridade').addEventListener('change', CalculoEndo)
 document.querySelector('#nivel-inicial').addEventListener('change', CalculoEndo)
 document.querySelector('#nivel-final').addEventListener('change', CalculoEndo)
+
 
 
 function CalculoEndo(){

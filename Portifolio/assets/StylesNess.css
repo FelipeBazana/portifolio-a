@@ -1,0 +1,45 @@
+
+@import "./node_modules/nes.css/css/nes.css";
+
+
+@import "nes.css/css/nes.min.css";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*
+.exo-<uniquifier> {
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+  */
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.action{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#lista-de-tarefas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}

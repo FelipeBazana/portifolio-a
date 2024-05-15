@@ -1,0 +1,85 @@
+<html>
+<head>
+    
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
+    
+    <link rel="stylesheet" href="./assets/StylesNess.css">
+
+    <script src="./Scripts/Cadastro.js" defer></script>
+
+</head>
+
+<body>
+
+
+    <form class="">
+
+      <div class="nes-container is-rounded form" >
+        
+          <p>Car parts</p>
+
+
+        <div class="nes-field">
+          <label for="name">Part Name</label>
+          <input type="text" id="name" class="nes-input">
+          
+          <span id="name-erro" class="nes-text is-error"></span>
+        </div>
+
+
+        <div class="nes-field">
+          <label for="weight">Weight (Kg)</label>
+          <input type="text" id="weight" class="nes-input">
+          
+          <span id="weight-erro" class="nes-text is-error"></span>
+        </div>
+
+
+        <div class="nes-field">
+          <label for="price">Price ($)</label>
+          <input type="number" id="price" class="nes-input">
+
+          
+          <span id="price-erro" class="nes-text is-error"></span>
+        </div>
+
+
+        <label for="brand">Brand</label>
+        <div class="nes-select">
+          <select required id="brand">
+            <option value="Generic">Generic</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Cytroen">Cytroen</option>
+            <option value="Peugeot">Peugeot</option>
+            
+            <span id="brand-erro" class="nes-text is-error"></span>
+          </select>
+      </div>
+
+
+      <div>
+        <label for="description">Description</label>
+        <textarea id="description" class="nes-textarea"></textarea>
+
+        
+        <span id="description" class="nes-text is-error"></span>
+      </div>
+
+      <div class="actions">
+        <a href="./LoadNess.html" class="nes-btn">Cancel</a>
+        <button type="button" id="save" class="nes-btn is-primary" >Save</button>
+      </div>
+
+    </div>
+        
+  </form>
+
+</body>
+
+</html>

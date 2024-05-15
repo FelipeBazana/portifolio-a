@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "./node_modules/nes.css/css/nes.css";
 
 *{
   margin: 0;
@@ -6,32 +8,26 @@
 }
 
 /*
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 300 to 800
-
-.open-sans-<uniquifier> {
-  font-family: "Open Sans", sans-serif;
+.exo-<uniquifier> {
+  font-family: "Exo", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }
   */
 
 
 header{
-  height: 25vh;
-  width: 100vw;
+  height: 100vh;
   border-radius: 50%;
-  display: flex;
 }
 
 header::before{
   content: '';
-  background-color: #ffffff;
+  background-image: url(../assets/images/Home.png);
+  background-color: black;
   background-size: cover;
-  height: 25vh;
+  height: 100vh;
   width: 100vw;
   display: block;
   position: fixed;
@@ -39,17 +35,13 @@ header::before{
 }
 
 
-#Page1{
-  padding: 25px;
+#Lore{
   height: 100vh;
+  border-radius: 50%;
   display: flex;
 }
 
-#Page1 img{
-  border-radius: 80%;
-}
-
-#Page1::before{
+#Lore::before{
   content: '';
   height: 110vh;
   width: 100vw;
@@ -57,19 +49,15 @@ header::before{
   z-index: -10;
 }
 
-#Wrapper{
-  height: 50vh;
-  width: 100vw;
-  max-width: 5000px;
-}
-
-#Wrapper img{
-  border-radius: 20%;
-  
+#Images-Frames ul{
+  height: 100vh;
+  border-radius: 50%;
+  display: flex;
   justify-content: center;
+  
 }
 
-#Wrapper::before{
+#Images-Frames::before{
   content: '';
   height: 110vh;
   width: 100vw;
@@ -77,14 +65,49 @@ header::before{
   z-index: -10;
 }
 
+#Mods-Endo{
+  height: 100vh;
+  width: 100vw;
+  border-radius: 50%;
+  max-width: 5000px;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
 
-#Wrapper::before{
+
+#Mods-Endo::before{
+  background-image: url(../assets/images/Back-Mods.png);
+  background-color: black;
   background-size: cover;
   content: '';
   height: 110vh;
   width: 100vw;
   position: absolute;
   z-index: -10;
+}
+
+#Ness{
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  width: 100vw;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Ness::before{
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  content: '';
+  height: 110h;
+  width: 100vw;
+  position: absolute;
+  z-index: -9;
 }
 
 .card{
@@ -117,56 +140,28 @@ header::before{
 }
 
 .card:hover .image-wrapper{ 
-  filter: opacity(0.2);
-}
-
-h1{
-  margin: 50px;
-
-  font-family: "Open Sans", sans-serif;
-  
-  color: #033249;
-
-  font-style: normal;
-
-  font-size: 120px;
-
-}
-
-h2{
-  margin: 50px;
-
-  font-family: "Open Sans", sans-serif;
-  
-  color: #033249;
-
-  font-style: normal;
-
-  font-size: 80px;
-
+  filter: brightness(30%);
 }
 
 h3{
-  margin: 90px;
-
-  padding: 20px;
-
-  font-family: "Open Sans", sans-serif;
-  
-  color: #033249;
-
-  font-style: normal;
-
-  font-size: 24px;
-
-}
-
-p{
-  margin: 10px;
+  margin: 0px;
 
   font-family: "Exo", sans-serif;
   
-  color: #1d1d1d;
+  color: #957aff;
+
+  font-style: normal;
+
+  font-size: 48px;
+
+}
+
+
+p{
+  margin: 10px;
+  font-family: "Exo", sans-serif;
+  
+  color: #91b1f5;
 
   font-style: normal;
 
@@ -178,7 +173,7 @@ ul{
   margin: 15px;
   font-family: "Exo", sans-serif;
   
-  color: #1d1d1d;
+  color: #7d91f5;
 
   font-style: normal;
 
@@ -188,10 +183,9 @@ ul{
 
 label{
   margin: 15px;
-
   font-family: "Exo", sans-serif;
   
-  color: #1d1d1d;
+  color: #7d91f5;
 
   font-style: normal;
 
@@ -202,9 +196,15 @@ output{
   margin: 15px;
   font-family: "Exo", sans-serif;
   
-  color: #1d1d1d;
+  color: #7d91f5;
 
   font-style: normal;
 
   font-size: 20px;
+}
+
+li{
+
+  list-style: none;
+
 }
